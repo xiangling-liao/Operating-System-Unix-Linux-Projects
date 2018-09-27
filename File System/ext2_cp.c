@@ -76,8 +76,8 @@ int indirect=0;
 	   exit(1);
     }
 
-
-    sb = (struct ext2_super_block *)(disk + 1024);
+//changes here:
+    sb = (struct ext2_super_block *)(1024) + disk;
     group_desc=(struct ext2_group_desc *)(disk+1024+EXT2_BLOCK_SIZE);
     inodes = disk + EXT2_BLOCK_SIZE *(group_desc->bg_inode_table);
     inode_bitmap_block = disk + EXT2_BLOCK_SIZE * group_desc->bg_inode_bitmap;//loc
