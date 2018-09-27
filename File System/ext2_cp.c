@@ -50,7 +50,11 @@ int indirect=0;
 
 
     if(argc != 4) {
+<<<<<<< HEAD
         fprintf(stderr, "Usage: %s <image file name1> <source file> <absolute path on the disk>\n",argv[0]);
+=======
+        fprintf(stderr, "Usage: %s <image file purpose_conflict> <source file> <absolute path on the disk>\n",argv[0]);
+>>>>>>> 1f871b9811ccba5d821d392847e458458e05aa78
         exit(1);
     }
 
