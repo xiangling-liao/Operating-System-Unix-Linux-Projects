@@ -111,9 +111,9 @@ int indirect=0;
     }*/
     	
     	
-
-  strcpy(fileName,argv[2]);//
-  
+//change_2:
+  //strcpy(fileName,argv[2]);//
+    strcpy(fileName,argv[4]);
     if(fileName[strlen(fileName)-1]=='/'){
         fileName[strlen(fileName)-1]='\0';
 }
